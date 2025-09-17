@@ -1,0 +1,67 @@
+ body{
+ background-color:#1d232a;
+ }
+
+html,
+body{
+    font-size:10px;
+    margin:0;
+}
+
+.title{
+    font-size:80px;
+    font-weight:bold;
+    font-family: 'Times New Roman';
+    color: #ecf9ff;
+    display: inline-block;
+    width: 800px;
+    margin-top: 140px;
+    margin-left: 100px;
+    line-height: 1.7;
+}
+
+.buy-a-landmark{
+    color:#1d3944;
+    font-size: 90px;
+    font-weight:900;
+    font-family: Arial;
+}
+
+.description{
+    font-size: 18px;
+    color:#ecf9ff;
+    font-family: Arial;
+    display: inline-block;
+    width: 700px;
+    margin-top: 20px;
+    line-height: 1.7;
+    margin-left: 120px;
+    font-weight: bold;
+}
+
+.shop-button{
+    background-color:#1d3944;
+    color:#ecf9ff;
+    border:none;
+    border-radius: 5px;
+    padding:15px 30px;
+    font-size:20px;
+    margin-top: 30px;
+    margin-left: 120px;
+    cursor:pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.image{
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 130px;
+    width: 700px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.introduction{
+    display:flex;
+}
