@@ -23,6 +23,9 @@ body{
     margin:60px 0;
     border-radius: 10px;
     box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+
 }
 
 .card-image{
@@ -56,11 +59,23 @@ body{
     border-radius: 5px;
     padding:10px 20px;
     font-size:14px;
-    margin-left: 240px;
     margin-top: 15px;
     cursor:pointer;
+    transition: background-color 0.2s, margin 0.15s, box-shadow 0.15s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    width: 30%;
+    margin-left: 240px;
 }
 
+.cart-button:hover{
+    background-color:#1b333d;
+    color: #e1e9ec;
+}
+
+.cart-button:active{
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.15);
+    margin-top:15.5px;
+}
 .navigation-bar{
     background-color:#1d3944;
     padding:15px;
@@ -88,6 +103,12 @@ body{
     color:#ecf9ff;
     font-family: Arial;
     text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-home:hover{
+    text-decoration: underline;
+    color: #d6dcdf;
 }
 
 .nav-shop{
@@ -96,6 +117,13 @@ body{
     color:#ecf9ff;
     font-family: Arial;
     text-decoration: none;
+    transition: color ;
+    transition: color 0.2s;
+}
+
+.nav-shop:hover{
+    text-decoration: underline;
+    color: #d6dcdf;
 }
 
 .search-bar{
