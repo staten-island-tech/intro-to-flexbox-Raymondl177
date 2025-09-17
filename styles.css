@@ -1,26 +1,28 @@
-body{
-    background-color:#1d3944;
-}
+ body{
+ background-color:#1d232a;
+ }
 
 html,
-body,{
+body{
     font-size:10px;
+    margin:0;
 }
 
 .container{
     display:flex;
     flex-wrap:wrap;
-    background-color:#1d3944;
+    background-color:#1d232a;
     margin:30px auto;
     justify-content:space-between;
     width:90vw;
 }
 .card{
-    background-color:#f0f3de;
+    background-color:#191e24;
     width:22%;
     height:500px;
     margin:60px 0;
     border-radius: 10px;
+    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
 }
 
 .card-image{
@@ -36,7 +38,7 @@ body,{
     margin-left: 30px;
     margin-top: 20px;
     font-family: Arial;
-    color: rgb(56, 54, 54)
+    color: #ecf9ff;
 }
 
 .card-price{
@@ -44,11 +46,12 @@ body,{
     margin-left: 30px;
     margin-top: 10px;
     font-family: Arial;
+    color: #ecf9ff;
 }
 
 .cart-button{
     background-color:#1d3944;
-    color:#f0f3de;
+    color:#ecf9ff;
     border:none;
     border-radius: 5px;
     padding:10px 20px;
@@ -56,4 +59,71 @@ body,{
     margin-left: 240px;
     margin-top: 15px;
     cursor:pointer;
+}
+
+.navigation-bar{
+    background-color:#1d3944;
+    padding:15px;
+}
+
+.nav-logo,
+.nav-links,
+.nav-search,
+.nav-cart {
+    display: inline-block;
+}
+
+.nav-title{
+    font-size:40px;
+    font-weight:bold;
+    color:#ecf9ff;
+    font-family: Arial;
+    margin-left: 80px;
+}
+
+.nav-home{
+    margin-left: 850px;
+    font-size:20px;
+    color:#ecf9ff;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.nav-shop{
+    margin-left: 40px;
+    font-size:20px;
+    color:#ecf9ff;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.search-bar{
+    padding:5px;
+    border-radius: 5px;
+    border:none;
+    margin-left: 40px;
+    height: 40px;
+    width:250px;
+}
+
+.search-button{
+    background-color:#1d232a;
+    color:#ecf9ff;
+    border:none;
+    border-radius: 5px;
+    padding:10px;
+    height:40px;
+    font-size:14px;
+    cursor:pointer;
+    margin-left: 2px;
+}
+
+.cart-icon{
+    width:45px;
+    margin-left: 40px;
+    cursor:pointer;
+    vertical-align: middle;
+    background: transparent;
+    border: none;
+    color: #ecf9ff;
 }
