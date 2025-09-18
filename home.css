@@ -72,3 +72,12 @@ body{
 .introduction{
     display:flex;
 }
+
+@media screen and (max-width: 1600px){
+    .title,
+    .image,
+    .description,
+    .shop-button{
+        width:100%;
+    }
+}

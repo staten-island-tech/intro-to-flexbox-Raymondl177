@@ -103,7 +103,7 @@ body{
     color:#ecf9ff;
     font-family: Arial;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.15s;
 }
 
 .nav-home:hover{
@@ -117,8 +117,7 @@ body{
     color:#ecf9ff;
     font-family: Arial;
     text-decoration: none;
-    transition: color ;
-    transition: color 0.2s;
+    transition: color 0.15s;
 }
 
 .nav-shop:hover{
@@ -145,6 +144,18 @@ body{
     font-size:14px;
     cursor:pointer;
     margin-left: 2px;
+    transition: background-color 0.2s, margin 0.15s, box-shadow 0.15s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.search-button:hover{
+    background-color:#151a1f;
+    color: #e1e9ec;
+}
+
+.search-button:active{
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.15);
+    margin-top:15.5px;
 }
 
 .cart-icon{
@@ -155,4 +166,20 @@ body{
     background: transparent;
     border: none;
     color: #ecf9ff;
+}
+
+@media screen and (max-width: 1600px){
+    .card,
+    .nav-logo,
+    .nav-shop,
+    .nav-home,
+    .search-bar,
+    .search-button,
+    .cart-icon,
+    .navigation-bar{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
 }
