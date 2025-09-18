@@ -1,16 +1,16 @@
- body{
- background-color:#1d232a;
- }
-
-html,
-body{
-    font-size:10px;
-    margin:0;
+body {
+    background-color: #1d232a;
 }
 
-.title{
-    font-size:80px;
-    font-weight:bold;
+html,
+body {
+    font-size: 10px;
+    margin: 0;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: bold;
     font-family: 'Times New Roman';
     color: #ecf9ff;
     display: inline-block;
@@ -20,16 +20,16 @@ body{
     line-height: 1.7;
 }
 
-.buy-a-landmark{
-    color:#1d3944;
+.buy-a-landmark {
+    color: #1d3944;
     font-size: 90px;
-    font-weight:900;
+    font-weight: 900;
     font-family: Arial;
 }
 
-.description{
+.description {
     font-size: 18px;
-    color:#ecf9ff;
+    color: #ecf9ff;
     font-family: Arial;
     display: inline-block;
     width: 700px;
@@ -39,16 +39,16 @@ body{
     font-weight: bold;
 }
 
-.shop-button{
-    background-color:#1d3944;
-    color:#ecf9ff;
-    border:none;
+.shop-button {
+    background-color: #1d3944;
+    color: #ecf9ff;
+    border: none;
     border-radius: 5px;
-    padding:15px 30px;
-    font-size:20px;
+    padding: 15px 30px;
+    font-size: 20px;
     margin-top: 30px;
     margin-left: 120px;
-    cursor:pointer;
+    cursor: pointer;
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
@@ -56,11 +56,12 @@ body{
     transition: background-color 0.15s, color 0.15s;
 }
 
-.shop-button:hover{
-    background-color:#1b333d;
+.shop-button:hover {
+    background-color: #1b333d;
     color: #e1e9ec;
 }
-.image{
+
+.image {
     display: inline-block;
     margin-top: 100px;
     margin-right: 130px;
@@ -69,15 +70,19 @@ body{
     border-radius: 20px;
 }
 
-.introduction{
-    display:flex;
+.introduction {
+    display: flex;
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) {
+
     .title,
     .image,
     .description,
-    .shop-button{
-        width:100%;
+    .shop-button {
+        width: 100%;
+    }
+    .introduction{
+        flex-direction: column;
     }
 }
