@@ -82,7 +82,8 @@ body {
     .shop-button {
         width: 100%;
     }
-    .introduction{
+
+    .introduction {
         flex-direction: column;
     }
 }
