@@ -20,7 +20,7 @@
  .card {
    background-color: #191e24;
    width: 22%;
-   height: 500px;
+   height: 600px;
    margin: 60px 0;
    border-radius: 10px;
    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
@@ -45,6 +45,14 @@
  }
 
  .card-price {
+   font-size: 15px;
+   margin-left: 30px;
+   margin-top: 10px;
+   font-family: Arial;
+   color: #ecf9ff;
+ }
+
+  .card-continent {
    font-size: 15px;
    margin-left: 30px;
    margin-top: 10px;
