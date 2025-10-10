@@ -161,4 +161,20 @@ function inject(landmark) {
 }
 
 landmarks.forEach((landmark) => inject(landmark));
-//loop through itemsaaaaa
+//loop through items
+
+function addToCart() {
+  const buttons = document.querySelectorAll(".cart-button");
+  const btnArray = Array.from(buttons);
+  btnArray.forEach((button) =>
+    button.addEventListener("click", function (event) {
+      console.log(event.target.textContent);
+      console.log(event.target.closest(".card").getAttribute(".card-title"));
+      button.textContent = "Added!";
+      setTimeout(() => {
+        button.textContent = "Add to Cart";
+      }, 1000);
+    })
+  );
+}
+addToCart();
