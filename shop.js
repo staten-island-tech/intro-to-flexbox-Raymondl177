@@ -4,163 +4,161 @@ const landmarks = [
     price: 67000000000,
     inStock: true,
     continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/white-house.jpg",
   },
   {
     name: "Eiffel Tower",
     price: 2500000000,
     inStock: true,
     continent: "Europe",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/eiffel-tower.webp",
   },
-    {
+  {
     name: "Great Wall of China",
     price: 50000000000,
     inStock: true,
     continent: "Asia",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/great-wall-of-china.webp",
   },
-    {
+  {
     name: "Taj Mahal",
     price: 10000000000,
     inStock: true,
     continent: "Asia",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/taj-mahal.jpg",
   },
-    {
+  {
     name: "Statue of Liberty",
     price: 3000000000,
     inStock: true,
     continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/statue-of-liberty.jpg",
   },
-    {
+  {
     name: "Colosseum",
     price: 1200000000,
     inStock: true,
     continent: "Europe",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/colosseum.webp",
   },
-    {
+  {
     name: "Machu Picchu",
     price: 6000000000,
     inStock: true,
     continent: "South America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/machu-picchu.jpg",
   },
-    {
+  {
     name: "Sydney Opera House",
     price: 2000000000,
     inStock: true,
     continent: "Australia",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/sydney-opera-house.jpg",
   },
-    {
+  {
     name: "Big Ben",
     price: 5000000000,
     inStock: true,
     continent: "Europe",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/big-ben.jpg",
   },
-    {
+  {
     name: "Pyramids of Giza",
     price: 30000000000,
     inStock: true,
     continent: "Africa",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/pyramids-of-giza.jpg",
   },
-    {
+  {
     name: "Washington Monument",
     price: 3000000000,
     inStock: true,
     continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/washington-monument.jpg",
   },
-    {
+  {
     name: "Leaning Tower of Pisa",
     price: 1000000000,
     inStock: true,
     continent: "Europe",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    img: "images/leaning-tower-of-pisa.jpg",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Parthenon",
+    price: 1000000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    continent: "Europe",
+    img: "images/parthenon.jpg",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Mount Fuji",
+    price: 500000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    continent: "Asia",
+    img: "images/mount-fuji.jpg",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Burj Khalifa",
+    price: 1500000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    continent: "Asia",
+    img: "images/burj-khalifa.jpg",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Christ the Redeemer",
+    price: 800000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    continent: "South America",
+    img: "images/christ-the-redeemer.jpg",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Stonehenge",
+    price: 300000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    continent: "Europe",
+    img: "images/stonehenge.jpg",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Colossus of Rhodes",
+    price: 2000000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    continent: "Europe",
+    img: "images/colossus-of-rhodes.webp",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Moai Statues",
+    price: 750000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
+    continent: "South America",
+    img: "images/moai-statues.jpg",
   },
-    {
-    name: "White house",
-    price: 67000000000,
+  {
+    name: "Moon",
+    price: 1000000000000,
     inStock: true,
-    continent: "North America",
-    img: "https://media.istockphoto.com/id/147646926/photo/the-white-house.jpg?s=612x612&w=0&k=20&c=ONA6w_1XbCbTD2QGL8qMgVZtEgcn4TIGeXQEtGm5Fh0="
-  }
+    continent: "Space",
+    img: "images/moon.jpg",
+  },
 ];
 
 /* landmarks.forEach((landmark) => console.log(landmark.continent)) */
 
 //create inject function
 function inject(landmark) {
-//do something
+  //query the container
+  //using adjacent html push card into container
   const container = document.querySelector(".container");
-  container.insertAdjacentHTML("afterbegin", 
+  container.insertAdjacentHTML(
+    "afterbegin",
     `<div class="card">
       <img class="card-image" src=${landmark.img} alt=${landmark.name}/>
       <h1 class="card-title"> ${landmark.name}</h1>
-      <h2 class="card-price">${landmark.price}</h2>
-      <h3 class="card-continent">${landmark.continent}</h3>
+      <p class="card-continent">${landmark.continent}</p>
+      <p class="card-price"> $${landmark.price}</p>
       <button class="cart-button">Add to Cart</button>
     </div>`
   );
-
-  //query the container
-  //using adjacent html push card into container
 }
 
-
 landmarks.forEach((landmark) => inject(landmark));
-//loop through items
+//loop through itemsaaaaa
