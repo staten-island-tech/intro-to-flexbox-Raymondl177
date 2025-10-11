@@ -168,8 +168,7 @@ function addToCart() {
   const btnArray = Array.from(buttons);
   btnArray.forEach((button) =>
     button.addEventListener("click", function (event) {
-      console.log(event.target.textContent);
-      console.log(event.target.closest(".card").getAttribute(".card-title"));
+      console.log(event.target.closest(".card").querySelector(".card-title").textContent);
       button.textContent = "Added!";
       setTimeout(() => {
         button.textContent = "Add to Cart";

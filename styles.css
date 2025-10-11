@@ -95,7 +95,8 @@
  .nav-logo,
  .nav-links,
  .nav-search,
- .nav-cart {
+ .nav-cart,
+ .nav-filter {
    display: inline-block;
  }
 
@@ -108,7 +109,7 @@
  }
 
  .nav-home {
-   margin-left: 850px;
+   margin-left: 400px;
    font-size: 20px;
    color: #ecf9ff;
    font-family: Arial;
@@ -116,13 +117,15 @@
    transition: color 0.15s;
  }
 
- .nav-home:hover {
+ .nav-home:hover,
+ .nav-filter:hover,
+ .nav-all:hover {
    text-decoration: underline;
    color: #d6dcdf;
  }
 
- .nav-shop {
-   margin-left: 40px;
+ .nav-all {
+   margin-left: 50px;
    font-size: 20px;
    color: #ecf9ff;
    font-family: Arial;
@@ -130,16 +133,21 @@
    transition: color 0.15s;
  }
 
- .nav-shop:hover {
-   text-decoration: underline;
-   color: #d6dcdf;
+  .nav-filter {
+   margin-left: 50px;
+   font-size: 20px;
+   color: #ecf9ff;
+   font-family: Arial;
+   text-decoration: none;
+   transition: color 0.15s;
+   cursor: pointer;
  }
 
  .search-bar {
    padding: 5px;
    border-radius: 5px;
    border: none;
-   margin-left: 40px;
+   margin-left: 160px;
    height: 40px;
    width: 250px;
  }
@@ -186,12 +194,13 @@
 
    .card,
    .nav-logo,
-   .nav-shop,
+   .nav-all,
    .nav-home,
    .search-bar,
    .search-button,
    .cart-icon,
-   .navigation-bar {
+   .navigation-bar,
+   .nav-filter {
      width: 100%;
    }
 
