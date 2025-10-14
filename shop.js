@@ -179,12 +179,16 @@ function addToCart() {
 addToCart();
 
 function filterContinent() {
-  document.getElementById("north-america").addEventListener("click", function (e) {
-  e.preventDefault();
-  if (filterContinent.target.id !== "north-america") {
-  const cards = document.getElementById("europe", "asia", "south-america", "australia", "africa", "secret");
-  cards.remove();
-  }
+  const filterButtons = document.querySelectorAll(".nav-filter");
+  const container = document.querySelector(".container");
+  filterButtons.forEach(button => {
+  button.addEventListener("click", function(event) {
+    const selectedContinent = button.textContent.trim();
+    container.innerHTML = "";
+    const filteredLandmarks = landmarks.filter(landmark => landmark.continent === selectedContinent);
+    filteredLandmarks.forEach(landmark => inject(landmark));
+    addToCart();
   });
-}
+  })
+};
 filterContinent();
