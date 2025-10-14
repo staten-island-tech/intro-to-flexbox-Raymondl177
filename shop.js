@@ -172,8 +172,19 @@ function addToCart() {
       button.textContent = "Added!";
       setTimeout(() => {
         button.textContent = "Add to Cart";
-      }, 1000);
+      }, 1500);
     })
   );
 }
 addToCart();
+
+function filterContinent() {
+  document.getElementById("north-america").addEventListener("click", function (e) {
+  e.preventDefault();
+  if (filterContinent.target.id !== "north-america") {
+  const cards = document.getElementById("europe", "asia", "south-america", "australia", "africa", "secret");
+  cards.remove();
+  }
+  });
+}
+filterContinent();
