@@ -190,6 +190,27 @@
    transform: scale(1.07)
  }
 
+  .item-calculation {
+    background-color: #191e24;
+    width: 30vw;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ecf9ff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+  }
+
+
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+  }
+
  @media screen and (max-width: 1600px) {
 
    .card,
