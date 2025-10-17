@@ -52,7 +52,7 @@
    color: #dfe8e4;
  }
 
-  .card-continent {
+ .card-continent {
    font-size: 18px;
    margin-left: 30px;
    margin-top: 8px;
@@ -118,22 +118,12 @@
  }
 
  .nav-home:hover,
- .nav-filter:hover,
- .nav-all:hover {
+ .nav-filter:hover {
    text-decoration: underline;
    color: #d6dcdf;
  }
 
- .nav-all {
-   margin-left: 30px;
-   font-size: 20px;
-   color: #ecf9ff;
-   font-family: Arial;
-   text-decoration: none;
-   transition: color 0.15s;
- }
-
-  .nav-filter {
+ .nav-filter {
    margin-left: 30px;
    font-size: 20px;
    color: #ecf9ff;
@@ -190,97 +180,101 @@
    transform: scale(1.07)
  }
 
-.cart-header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
+ .cart-header-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+ }
 
-.your-cart {
-  font-size: 24px;
-  color: #ecf9ff;
-  font-family: Arial, sans-serif;
-  margin-right: 590px;
-  font-weight: bold;
-}
+ .your-cart {
+   font-size: 24px;
+   color: #ecf9ff;
+   font-family: Arial, sans-serif;
+   margin-right: 590px;
+   font-weight: bold;
+ }
 
-.item-count {
-  font-size: 20px;
-  font-family: Arial, sans-serif;
-}
+ .item-count {
+   font-size: 19px;
+   font-family: Arial, sans-serif;
+ }
 
-.cart-content {
-  border-bottom: 1px solid #2f3740;
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
+ .cart-content {
+   border-bottom: 1px solid #2f3740;
+   padding: 20px 0;
+   margin-bottom: 20px;
+ }
 
-.cart-items {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  align-items: center;
-  padding: 6px 0;
-  font-size: 17px;
-}
+ .cart-items {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   align-items: center;
+   padding: 6px 0;
+   font-size: 17px;
+ }
 
-.cart-header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #2f3740;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
-  color: #9ca3af;
-  font-weight: bold;
-}
+ .product-name{
+  margin-right: 200px;
+ }
+ .cart-header {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #2f3740;
+   padding-bottom: 15px;
+   margin-bottom: 10px;
+   color: #9ca3af;
+   font-weight: bold;
+ }
 
-.product-label {
-  margin-right: 570px;
-}
+ .product-label {
+   margin-right: 570px;
+ }
 
-.cart-summary {
-  background-color: #15191e;
-  border-radius: 8px;
-  padding: 20px;
-  font-weight: bold;
-  color: #ecf9ff;
-  font-family: Arial, sans-serif;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  margin-top: 40px;
-}
+ .cart-summary {
+   background-color: #15191e;
+   border-radius: 8px;
+   padding: 20px;
+   font-weight: bold;
+   color: #ecf9ff;
+   font-family: Arial, sans-serif;
+   padding-top: 15px;
+   padding-bottom: 20px;
+   margin-top: 40px;
+ }
 
-.subtotal-label {
-  color: #9ca3af;
-  margin: 5px 0;
-  margin-right: 15px;
-  font-size: 13px;
-  display: block;
-  margin-bottom: 15px;
-}
+ .subtotal-label {
+   color: #9ca3af;
+   margin: 5px 0;
+   margin-right: 15px;
+   font-size: 13px;
+   display: block;
+   margin-bottom: 15px;
+ }
 
-.subtotal {
-  font-size: 40px;
-  color: #ecf9ff;
-}
+ .subtotal {
+   font-size: 40px;
+   color: #ecf9ff;
+ }
 
-.cart-container {
-  background-color: #191e24;
-  width: 30vw;
-  margin: 0 auto 30px auto;
-  border-radius: 10px;
-    box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
-    align-items: center;
-    display: none;
-    flex-direction: column;
-    color: #ecf9ff;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    padding: 26px;
-    margin-top: 150px;
-    margin-bottom: 50px;
-  }
+ .cart-container {
+   background-color: #191e24;
+   width: 40vw;
+   margin: 0 auto 30px auto;
+   border-radius: 10px;
+   box-shadow: 5px 9px 10px rgba(0, 0, 0, 0.15);
+   align-items: center;
+   display: none;
+   flex-direction: column;
+   color: #ecf9ff;
+   font-family: Arial, sans-serif;
+   font-size: 15px;
+   padding: 26px;
+   margin-top: 150px;
+   margin-bottom: 80px;
+   padding-bottom: 13px;
+ }
 
 
 
@@ -289,7 +283,6 @@
 
    .card,
    .nav-logo,
-   .nav-all,
    .nav-home,
    .search-bar,
    .search-button,
