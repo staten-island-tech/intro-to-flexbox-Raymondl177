@@ -130,7 +130,6 @@ const cart = [
   }
 ];
  */
-inject(cart);
 /* landmarks.forEach((landmark) => console.log(landmark.continent)) */
 
 //create inject function
@@ -156,6 +155,7 @@ landmarks.forEach((landmark) => inject(landmark));
 function addToCart() {
   const buttons = document.querySelectorAll(".cart-button");
   const btnArray = Array.from(buttons);
+  const cartContainer = document.querySelector(".cart-container");
   btnArray.forEach((button) =>
     button.addEventListener("click", function (event) {
       console.log(event.target.closest(".card").querySelector(".card-title").textContent);
@@ -163,10 +163,26 @@ function addToCart() {
       setTimeout(() => {
         button.textContent = "Add to Cart";
       }, 1500);
+      cartContainer.style.display = "flex";
     })
   );
 }
 addToCart();
+
+function cartButton() {
+  const cartButtons = document.querySelectorAll(".cart-icon");
+  const cartContainer = document.querySelector(".cart-container");
+  const target = document.getElementById("bottom");
+  cartButtons.forEach(button => {
+    button.addEventListener("click", function(event) {
+    cartContainer.style.display = "flex";
+    if (target) {
+      target.scrollIntoView({ behavior: 'auto' });
+    }
+  });
+  })
+};
+cartButton();
 
 function filterContinent() {
   const filterButtons = document.querySelectorAll(".nav-filter");
