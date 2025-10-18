@@ -194,14 +194,27 @@ function cartItems() {
       cartItemsContainer.insertAdjacentHTML(
         "beforeend",
         `<div class="cart-items">
-          <p class="product-name">${itemName}</p>
-          <p class="product-price">${itemPrice}</p>
+          <span class="product-name">${itemName}</span>
+          <span class="product-price">${itemPrice}</span>
         </div>`
       );
     });
 });
 };
 cartItems();
+
+function itemCountUpdate() {
+  const cartButtons = document.querySelectorAll(".cart-button");
+  const itemCount = document.querySelector(".item-count");
+  let count = 0;
+  cartButtons.forEach((button) => {
+    button.addEventListener("click", function (event) {
+      count++;
+      if (itemCount) itemCount.textContent = `${count} items`;
+    });
+  });
+}
+itemCountUpdate();
 
 function cartButton() {
   const cartButtons = document.querySelectorAll(".cart-icon");
@@ -216,11 +229,12 @@ function cartButton() {
     });
   });
 }
-cartButton();
+cartButton(); 
 
 function filterContinent() {
   const filterButtons = document.querySelectorAll(".nav-filter");
   const container = document.querySelector(".container");
+
   filterButtons.forEach((button) => {
     button.addEventListener("click", function (event) {
       const selectedContinent = button.textContent.trim();
@@ -231,7 +245,9 @@ function filterContinent() {
           landmark.filter === selectedContinent
       );
       filteredLandmarks.forEach((landmark) => inject(landmark));
-      addToCart();
+       addToCart(); 
+       cartItems(); 
+       itemCountUpdate();
     });
   });
 }
