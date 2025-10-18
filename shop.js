@@ -203,8 +203,8 @@ function cartItems() {
         </div>`
       );
     });
-});
-};
+  });
+}
 cartItems();
 
 let count = 0;
@@ -233,7 +233,7 @@ function cartButton() {
     });
   });
 }
-cartButton(); 
+cartButton();
 
 function filterContinent() {
   const filterButtons = document.querySelectorAll(".nav-filter");
@@ -248,11 +248,34 @@ function filterContinent() {
           landmark.filter === selectedContinent
       );
       filteredLandmarks.forEach((landmark) => inject(landmark));
-       addToCart(); 
-       cartItems(); 
-       itemCountUpdate();
+      addToCart();
+      cartItems();
+      itemCountUpdate();
     });
   });
 }
 filterContinent();
 
+function searchLandmarks() {
+  const searchInput = document.querySelector(".search-bar");
+  const container = document.querySelector(".container");
+  const searchButton = document.querySelector(".search-button");
+  function doSearch() {
+    const searchTerm = searchInput.value.toLowerCase();
+    container.innerHTML = "";
+    const filteredLandmarks = landmarks.filter((landmark) =>
+      landmark.name.toLowerCase().includes(searchTerm)
+    );
+    if (filteredLandmarks.length === 0) {
+      container.innerHTML = "<p class='no-results'>No landmarks found.</p>";
+      return;
+    }
+    filteredLandmarks.forEach((landmark) => inject(landmark));
+    addToCart();
+    cartItems();
+    itemCountUpdate();
+  }
+  searchButton.addEventListener("click", doSearch);
+  searchInput.addEventListener("input", doSearch);
+}
+searchLandmarks();

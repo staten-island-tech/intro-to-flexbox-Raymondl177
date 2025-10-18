@@ -209,21 +209,22 @@
  }
 
 
-.cart-items {
-  display: flex;
-  margin-bottom: 10px;
-  padding: 6px 0;
-  font-size: 18px;
-  width: 100%;
-  justify-content: space-between;
-  font-family: Arial, sans-serif;
-  flex-direction: column;
-}
+ .cart-items {
+   display: flex;
+   margin-bottom: 10px;
+   padding: 6px 0;
+   font-size: 18px;
+   width: 100%;
+   justify-content: space-between;
+   font-family: Arial, sans-serif;
+   flex-direction: column;
+ }
 
-.product-price {
-  text-align: right;
-  margin-left: 12px;
-}
+ .product-price {
+   text-align: right;
+   margin-left: 12px;
+ }
+
  .cart-header {
    display: flex;
    justify-content: space-between;
@@ -282,6 +283,12 @@
    padding-bottom: 13px;
  }
 
+ .no-results {
+   color: #ecf9ff;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 50px;
+ }
 
  @media screen and (max-width: 1600px) {
 
