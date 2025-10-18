@@ -152,7 +152,7 @@ function inject(landmark) {
       <img class="card-image" src=${landmark.img} alt=${landmark.name}/>
       <h1 class="card-title"> ${landmark.name}</h1>
       <p class="card-continent">${landmark.continent}</p>
-      <p class="card-price"> $${landmark.price}</p>
+      <p class="card-price" data-price="${landmark.price}"> $${landmark.price}</p>
       <button class="cart-button">Add to Cart</button>
     </div>`
   );
@@ -161,15 +161,19 @@ function inject(landmark) {
 landmarks.forEach((landmark) => inject(landmark));
 //loop through items
 
+let subtotal = 0;
 function addToCart() {
   const buttons = document.querySelectorAll(".cart-button");
   const btnArray = Array.from(buttons);
   const cartContainer = document.querySelector(".cart-container");
+  const subtotalElement = document.querySelector(".subtotal");
   btnArray.forEach((button) =>
     button.addEventListener("click", function (event) {
-      console.log(
-        event.target.closest(".card").querySelector(".card-title").textContent
-      );
+      const itemPrice = event.target
+        .closest(".card")
+        .querySelector(".card-price").dataset.price;
+      subtotal += parseInt(itemPrice);
+      subtotalElement.textContent = `$${subtotal.toLocaleString()}`;
       button.textContent = "Added!";
       setTimeout(() => {
         button.textContent = "Add to Cart";
@@ -203,10 +207,10 @@ function cartItems() {
 };
 cartItems();
 
+let count = 0;
 function itemCountUpdate() {
   const cartButtons = document.querySelectorAll(".cart-button");
   const itemCount = document.querySelector(".item-count");
-  let count = 0;
   cartButtons.forEach((button) => {
     button.addEventListener("click", function (event) {
       count++;
@@ -234,7 +238,6 @@ cartButton();
 function filterContinent() {
   const filterButtons = document.querySelectorAll(".nav-filter");
   const container = document.querySelector(".container");
-
   filterButtons.forEach((button) => {
     button.addEventListener("click", function (event) {
       const selectedContinent = button.textContent.trim();
@@ -252,3 +255,4 @@ function filterContinent() {
   });
 }
 filterContinent();
+
